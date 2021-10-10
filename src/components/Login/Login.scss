@@ -1,0 +1,87 @@
+@import '../Common_components/CommonCss/Common.scss';
+
+.main {
+    background: #19293D;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+	background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.white_box {
+    // text-align: center;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 5%;
+    padding: 5%;
+    min-width: 200px;
+    max-width: 400px;
+
+    @include mQ(500px){  
+        background: none;
+        box-shadow: none;
+     }
+
+    h4 {
+        color: #03e9f4;
+        margin-bottom: 30px;
+    }
+
+    input[type= "text" ], input[type= "password" ]
+    {
+        width: 100%;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+        text-align: left;
+    }
+    button {
+        padding: 10px 20px;
+        color: #03e9f4;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        margin-top: 20px;
+        letter-spacing: 4px;
+        background: transparent;
+        border: 1px solid white;
+        float: left;
+        cursor: pointer;
+    }
+    p {
+        color: white;
+        font-size: 13px;
+        margin-bottom: 0;
+        float: right;
+        button {
+            border: none;
+            background: transparent;
+            outline: none;
+            color: #03e9f4;
+            float: none;
+            letter-spacing: 0;
+            text-transform: none;
+            padding: 0;
+            font-size: 13px;
+            margin: 0;
+            &:hover { 
+                text-decoration: underline;
+            }
+        }
+    }
+    span {
+        color: red;
+        font-size: 10px;
+        float: left;
+        margin-bottom: 20px;
+      }
+}
